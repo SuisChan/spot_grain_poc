@@ -1,0 +1,18 @@
+[package]
+name = "spot_grain_poc"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aes = "0.8.3"
+anyhow = "1.0.71"
+cbc = "0.1.2"
+grain128 = "0.1.0"
+hex = "0.4.3"
+prost = "0.11.9"
+sha1 = { version = "0.10.5", default-features = false, features = ["std"] }
+
+[build-dependencies]
+prost-build = "0.11.9"
